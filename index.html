@@ -28,8 +28,8 @@
 
                     <div @click= "nextClick()" class="next"></div>
 
-                    <div class="thumb" v-for=" image in images">
-                        <img :src="image" alt="">
+                    <div class="thumb" v-for=" (image,index) in images">
+                        <img :src="image" @click="goToImage(index)" alt="">
                     </div>
                     
                     
