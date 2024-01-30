@@ -12,7 +12,7 @@ createApp({
     },
     methods: {
         nextClick() {
-            if (this.activeImage > this.images.lenght -2) {
+            if (this.activeImage > this.images.length -2) {
                 this.activeImage = 0;
             } else {
                 this.activeImage++;
