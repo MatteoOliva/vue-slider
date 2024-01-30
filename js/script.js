@@ -18,6 +18,14 @@ createApp({
                 this.activeImage++;
                 
             }
+        },
+
+        prevClick () {
+            if (this.activeImage <= 0) {
+                this.activeImage = this.images.length -1;
+            } else {
+                this.activeImage--;
+            }
         }
-    }
+       },
 }).mount('#app')
