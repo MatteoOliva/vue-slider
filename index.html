@@ -28,9 +28,13 @@
 
                     <div @click= "nextClick()" class="next"></div>
 
-                    <div class="thumb active">
-                        <img src="img/01.webp" alt="Svezia" />
+                    <div class="thumb" v-for=" image in images">
+                        <img :src="image" alt="">
                     </div>
+                    
+                    
+                    <!-- <div class="thumb">
+                        <img src="img/01.webp" alt="Ratchet & Clank" />
 
                     <div class="thumb">
                         <img src="img/02.webp" alt="Ratchet & Clank" />
@@ -46,7 +50,7 @@
 
                     <div class="thumb">
                         <img src="img/05.webp" alt="Avengers" />
-                    </div>
+                    </div> -->
 
                 </div>
 
