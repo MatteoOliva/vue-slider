@@ -34,4 +34,12 @@ createApp({
             this.activeImage = index;
         },
     },
+
+    mounted() {
+        setInterval(() => {
+            this.nextClick();
+        }, 3000);
+
+    }
+
 }).mount('#app')
